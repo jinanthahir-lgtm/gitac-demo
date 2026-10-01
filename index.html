@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Valley Farmhouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Green Valley</div>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Booking</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tagline">ESCAPE • RELAX • RECONNECT</p>
+        <h1>Your Peaceful<br>Farmhouse Retreat</h1>
+        <p>
+          Enjoy fresh air, beautiful greenery and peaceful moments
+          away from the busy city.
+        </p>
+        <a href="#booking" class="btn">Book Your Stay</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80"
+             alt="Farmhouse">
+      </div>
+
+      <div class="about-content">
+        <p class="section-label">WELCOME TO GREEN VALLEY</p>
+        <h2>A Home Away From Home</h2>
+        <p>
+          Nestled among lush green fields, Green Valley Farmhouse is
+          designed for families, friends and couples looking for a
+          peaceful countryside getaway.
+        </p>
+        <p>
+          Spend your day relaxing by the pool, enjoying a barbecue,
+          exploring nature or simply watching the sunset.
+        </p>
+
+        <div class="stats">
+          <div>
+            <strong>4+</strong>
+            <span>Bedrooms</span>
+          </div>
+          <div>
+            <strong>10</strong>
+            <span>Guests</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="amenities section" id="amenities">
+      <p class="section-label">WHAT WE OFFER</p>
+      <h2>Farmhouse Amenities</h2>
+
+      <div class="amenity-grid">
+        <div class="amenity-card">
+          <span>🏊</span>
+          <h3>Private Pool</h3>
+          <p>Enjoy a refreshing swim in our private pool.</p>
+        </div>
+
+        <div class="amenity-card">
+          <span>🔥</span>
+          <h3>BBQ Area</h3>
+          <p>Perfect space for evening BBQs and gatherings.</p>
+        </div>
+
+        <div class="amenity-card">
+          <span>🌳</span>
+          <h3>Garden</h3>
+          <p>Relax in our spacious green outdoor area.</p>
+        </div>
+
+        <div class="amenity-card">
+          <span>📶</span>
+          <h3>Free Wi-Fi</h3>
+          <p>Stay connected with complimentary Wi-Fi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section" id="gallery">
+      <p class="section-label">EXPLORE THE FARMHOUSE</p>
+      <h2>Our Gallery</h2>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Farmhouse exterior">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Farmhouse interior">
+        <img src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=800&q=80" alt="Swimming pool">
+        <img src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=800&q=80" alt="Nature">
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking section" id="booking">
+      <div class="booking-content">
+        <p class="section-label">PLAN YOUR GETAWAY</p>
+        <h2>Book Your Stay</h2>
+        <p>
+          Fill in your details and we'll get back to you with availability.
+        </p>
+
+        <form id="bookingForm">
+          <div class="form-row">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+          </div>
+
+          <div class="form-row">
+            <input type="date" id="checkin" required>
+            <input type="date" id="checkout" required>
+          </div>
+
+          <select id="guests" required>
+            <option value="">Number of Guests</option>
+            <option value="2">2 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="8">8 Guests</option>
+            <option value="10">10 Guests</option>
+          </select>
+
+          <textarea id="message" rows="4"
+            placeholder="Any special requirements?"></textarea>
+
+          <button type="submit" class="btn">Send Booking Request</button>
+        </form>
+
+        <p id="formMessage" class="form-message"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h3>Green Valley Farmhouse</h3>
+      <p>A peaceful escape surrounded by nature.</p>
+    </div>
+
+    <div>
+      <p>📍 Kerala, India</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ stay@greenvalley.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
